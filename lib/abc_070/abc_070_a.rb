@@ -5,4 +5,4 @@ class Finder
   end
 end
 
-puts Finder.is_palindromic_number?(gets)
+puts Finder.is_palindromic_number?("812")
