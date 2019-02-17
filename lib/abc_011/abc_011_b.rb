@@ -1,0 +1,2 @@
+puts gets.chomp.capitalize
+
