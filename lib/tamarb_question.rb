@@ -10,7 +10,7 @@ class Phrase
   end
 
   def extract_longest_char
-    "#{longest_chars},#{calc_longest_size}"
+    "#{longest_chars} #{calc_longest_size}"
   end
 
   def calc_longest_size
