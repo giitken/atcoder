@@ -1,20 +1,20 @@
 class MinAbsCalculator
-    
+
   VALUE = 753
-  
+
   def run(splited_str)
     concated = concat_str(splited_str)
     search_min(concated)
   end
 
   def concat_str(array)
-    array.map.with_index{ |x,idx| array[idx..idx + 2].join.to_i }
+    array.map.with_index {|x, idx| array[idx..idx + 2].join.to_i}
   end
 
-  def search_min(concated) 
-    concated.map{|x| x - VALUE}.map(&:abs).min
+  def search_min(concated)
+    concated.map {|x| x - VALUE}.map(&:abs).min
   end
-  
+
 end
 
 puts MinAbsCalculator.new.run(gets.split(""))

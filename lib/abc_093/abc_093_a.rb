@@ -1,1 +1,1 @@
-puts gets.chomp.split("").sort.join == "abc" ? "Yes" : "No" ;
+puts gets.chomp.chars.sort.join == "abc" ? "Yes" : "No";
